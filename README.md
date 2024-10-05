@@ -215,3 +215,72 @@ Write a query to group admissions by service and calculate both the total and av
 
 ## Bonus question
 Write a query to retrieve all providers whose speciality is pediatrics and they are missing either of the contact details.
+
+# Task 5
+## Creating endpoints
+
+<br>
+
+## Setup
+
+1. Initialize the node.js environment
+   ```
+   npm init -y
+   ```
+2. Install the necessary dependancies
+   ```
+   npm install express mysql2 dotenv nodemon
+   ```
+3. Create a ``` server.js ``` and ```.env``` files
+   ```
+<br>
+
+## Run the server
+   ```
+   nodemon server.js
+   ```
+<br>
+
+## Setup the ```.env``` file
+```.env
+DB_USERNAME=root
+DB_HOST=localhost
+DB_PASSWORD=your_password
+DB_NAME=hospital_db
+```
+
+<br>
+
+## Configure the database connection and test the connection
+Configure the ```server.js``` file to access the credentials in the ```.env``` to use them in the database connection
+
+<br>
+
+## EndPoints
+
+## 1. Retrieve all patients
+Create a ```GET``` endpoint that retrieves all patients and displays their:
+- ```patient_id```
+- ```first_name```
+- ```last_name```
+- ```date_of_birth```
+
+<br>
+
+## 2. Retrieve all providers
+Create a ```GET``` endpoint that displays all providers with their:
+- ```first_name```
+- ```last_name```
+- ```provider_specialty```
+
+<br>
+
+## 3. Filter patients by First Name
+Create a ```GET``` endpoint that retrieves all patients by their first name
+
+<br>
+
+## 4. Retrieve all providers by their specialty
+Create a ```GET``` endpoint that retrieves all providers by their specialty
+
+<br>
